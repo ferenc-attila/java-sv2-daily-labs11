@@ -17,7 +17,6 @@ public class AdminUser implements User {
 
     @Override
     public String getPassword() {
-        String star = "*";
-        return star.repeat(password.length());
+       return "*".repeat(password.length());
     }
 }

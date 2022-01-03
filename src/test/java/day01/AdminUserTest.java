@@ -8,14 +8,14 @@ class AdminUserTest {
 
     @Test
     void getUserEmailTest() {
-        AdminUser admin = new AdminUser("admin@example.com", "ABCD12345");
+        User admin = new AdminUser("admin@example.com", "ABCD12345");
         assertEquals("admin@example.com", admin.getUserEmail());
 
     }
 
     @Test
     void getPasswordTest() {
-        AdminUser admin = new AdminUser("admin@example.com", "ABCD12345");
+        User admin = new AdminUser("admin@example.com", "ABCD12345");
         assertEquals("*********", admin.getPassword());
     }
 }
