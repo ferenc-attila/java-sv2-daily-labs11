@@ -1,11 +1,10 @@
 package day02;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Hiking {
 
-    private List<Coordinate> tracklog = new ArrayList<>();
+    private List<Coordinate> tracklog;
 
     public Hiking(List<Coordinate> tracklog) {
         this.tracklog = tracklog;
