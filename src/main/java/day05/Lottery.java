@@ -20,7 +20,7 @@ public class Lottery {
         int count = 0;
         int number;
         while (count <= amountOfNumbers) {
-            number = random.nextInt(bound + 1);
+            number = random.nextInt(1, bound + 1);
             if (!numbers.contains(number)) {
                 numbers.add(number);
                 count++;

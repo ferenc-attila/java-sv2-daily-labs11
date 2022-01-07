@@ -1,5 +1,6 @@
 package day05;
 
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -8,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LotteryTest {
 
-    @Test
+    @RepeatedTest(1000)
     void listOfNumbersTest() {
         Lottery lottery = new Lottery(5, 90);
         List<Integer> numbers = lottery.startLottery();
