@@ -8,7 +8,7 @@ public class Lottery {
 
     private int amountOfNumbers;
     private int bound;
-    Random random = new Random();
+    private Random random = new Random();
 
     public Lottery(int amountOfNumbers, int bound) {
         this.amountOfNumbers = amountOfNumbers;

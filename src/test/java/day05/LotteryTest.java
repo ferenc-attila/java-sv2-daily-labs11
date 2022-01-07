@@ -12,9 +12,8 @@ class LotteryTest {
     void listOfNumbersTest() {
         Lottery lottery = new Lottery(5, 90);
         List<Integer> numbers = lottery.startLottery();
-        int maxNumber = getMaxNumber(numbers);
-        assertTrue(maxNumber <= 90);
-        assertTrue(maxNumber >= 1);
+        assertTrue(getMaxNumber(numbers) <= 90);
+        assertTrue(getMinNumber(numbers) >= 1);
         assertFalse(isThereEquals(numbers));
     }
 
